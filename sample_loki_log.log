@@ -1,0 +1,23 @@
+20250818T04:37:57Z,EXAMPLE-SERVER-01,NOTICE,Starting Loki Scan VERSION: 0.51.0 SYSTEM: EXAMPLE-SERVER-01 TIME: 20250818T04:37:57Z PLATFORM: 10 10.0.17763 SP0 Multiprocessor Free PROC: Intel64 Family 6 Model 63 Stepping 0, GenuineIntel ARCH: 64bit WindowsPE
+20250818T04:37:58Z,EXAMPLE-SERVER-01,NOTICE,PE-Sieve successfully initialized BINARY: C:\loki\tools\pe-sieve64.exe SOURCE: https://github.com/hasherezade/pe-sieve
+20250818T04:37:59Z,EXAMPLE-SERVER-01,INFO,File Name Characteristics initialized with 3696 regex patterns
+20250818T04:38:00Z,EXAMPLE-SERVER-01,INFO,C2 server indicators initialized with 1759 elements
+20250818T04:38:01Z,EXAMPLE-SERVER-01,INFO,Malicious MD5 Hashes initialized with 19333 hashes
+20250818T04:38:02Z,EXAMPLE-SERVER-01,INFO,Malicious SHA1 Hashes initialized with 7785 hashes
+20250818T04:38:03Z,EXAMPLE-SERVER-01,INFO,Malicious SHA256 Hashes initialized with 23607 hashes
+20250818T04:38:04Z,EXAMPLE-SERVER-01,INFO,False Positive Hashes initialized with 0 hashes
+20250818T04:38:05Z,EXAMPLE-SERVER-01,INFO,Processing YARA rules folder C:\loki\signature-base\yara
+20250818T04:38:06Z,EXAMPLE-SERVER-01,INFO,Initializing all YARA rules at once (composed string of all rule files)
+20250818T04:38:07Z,EXAMPLE-SERVER-01,INFO,Initialized 1 Yara rules
+20250818T04:38:08Z,EXAMPLE-SERVER-01,INFO,Current user has admin rights - very good
+20250818T04:38:09Z,EXAMPLE-SERVER-01,INFO,Setting LOKI process with PID: 16324 to priority IDLE
+20250818T04:38:10Z,EXAMPLE-SERVER-01,INFO,Scanning Path C:\ ...
+20250818T04:38:11Z,EXAMPLE-SERVER-01,WARNING,FILE: C:\$Recycle.Bin\S-1-5-21-XXXXXXXXX-XXXXXXXXX-XXXXXXXXX-XXXXX\$RB778K4.conf SCORE: 70 TYPE: UNKNOWN SIZE: 1201893 FIRST_BYTES: 23636f6e6669672d76657273696f6e3d46473548 MD5: 5f9390e54ab420da88921d83037e1603 SHA1: a3ee8b2bb257936b28f3e5d28900901982d1be8b SHA256: 748afffc7295bc54b33e3636acfe2e2412ad772a516772850835c42ce411305d CREATED: Sun Jan 19 16:06:11 2025 MODIFIED: Sun Jan 19 16:06:11 2025 ACCESSED: Sun Jan 19 16:06:11 2025 REASON_1: Yara Rule MATCH: ID_115150 SUBSCORE: 70 DESCRIPTION: This signature fires on the presence of Base64 encoded URI prefixes (http:// and https://) across any file. The simple presence of such strings is not inherently an indicator of malicious content, but is worth further investigation.
+20250818T04:38:12Z,EXAMPLE-SERVER-01,ERROR,Connection failed to database server
+20250818T04:38:13Z,EXAMPLE-SERVER-02,ERROR,Connection failed to database server
+20250818T04:38:14Z,EXAMPLE-SERVER-01,INFO,Service started successfully
+20250818T04:38:15Z,EXAMPLE-SERVER-01,INFO,Scanning memory dump file 11136.dmp
+20250818T04:38:16Z,EXAMPLE-SERVER-01,NOTICE,Results: 2 alerts, 1162 warnings, 2 notices
+20250818T04:38:17Z,EXAMPLE-SERVER-01,RESULT,Indicators detected!
+20250818T04:38:18Z,EXAMPLE-SERVER-01,WARNING,FILE: C:\Documents and Settings\EXAMPLE-USER\AppData\Local\Google\Chrome\User Data\Default\Network\8aa10fd3-f22f-4b8c-92d9-6a87da37d758.tmp SCORE: 70 TYPE: UNKNOWN SIZE: 692 FIRST_BYTES: 7b226e6574223a7b22687474705f736572766572 MD5: 086a5688caad4eb2c2576b0d506ecff5 SHA1: 52a969a645d39c3e21fb6d1017fb0bba736bdf3e SHA256: 7d18763a478d326ac4a354772333a8da8c208833052be734c1afc355bdf6ff53 CREATED: Thu Oct  3 09:34:45 2024 MODIFIED: Thu Oct  3 09:34:45 2024 ACCESSED: Thu Oct  3 09:34:45 2024 REASON_1: Yara Rule MATCH: ID_115150 SUBSCORE: 70 DESCRIPTION: This signature fires on the presence of Base64 encoded URI prefixes (http:// and https://) across any file. The simple presence of such strings is not inherently an indicator of malicious content, but is worth further investigation.
+
