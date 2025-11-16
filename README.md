@@ -203,6 +203,8 @@ After running the setup script, you should see:
 2. You should see the upload interface
 3. If you see any errors, check the [Troubleshooting](#-troubleshooting) section
 
+**💡 Tip:** Check out the demo video (`demo.mp4`) included in the project to see the application in action!
+
 ---
 
 ## 🚀 Quick Start Guide
@@ -488,9 +490,11 @@ loki-log-manager/
 ├── db_config.php               # Database configuration
 ├── fix_upload_limits.ps1       # Upload limits fixer script (Windows)
 ├── sample_loki_log.log         # ⭐ Sample log file for testing
+├── demo.mp4                    # 🎥 Demo video showing application features
 ├── README.md                   # This file
 ├── LICENSE                     # MIT License
 ├── QUICK_SETUP.md              # Quick reference guide
+├── LINKEDIN_POST.md            # LinkedIn post content with video references
 ├── uploads/                    # Uploaded log files (auto-created)
 ├── temp/                       # Temporary CSV files (auto-created)
 └── exports/                    # Exported CSV files (auto-created)
@@ -498,6 +502,7 @@ loki-log-manager/
 
 **Important Files:**
 - **`sample_loki_log.log`**: ⭐ **Use this file to test the application!** Contains 24 sample log entries in the correct format.
+- **`demo.mp4`**: 🎥 **Demo video** showing the application in action. Located at `C:\xampp\htdocs\loki_log_manager\demo.mp4` (or your project directory).
 
 ---
 
